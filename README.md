@@ -117,7 +117,7 @@ La siguiente tabla contiene un listado con los ejemplos implementados y las tecn
 | Repositorio | Tipo app | Lenguaje/Framework | Testing |
 |-------------|----------|--------------------|---------|
 | [NotesAppAndroid](https://github.com/matey97/NotesAppAndroid) | Móvil (Android) | Kotlin + Jetpack Compose | JUnit + Mockito |
-| TODO | TODO | TODO | TODO |
+| [NotesAppNativeScript](https://github.com/matey97/NotesAppNativeScript) | Móvil (Android/iOS) | NativeScript + TypeScript | Karma + Jasmine |
 | TODO | TODO | TODO | TODO |
 
 Para más información, consultar el README de cada repositorio.
