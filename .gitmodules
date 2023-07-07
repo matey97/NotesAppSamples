@@ -1,3 +1,6 @@
 [submodule "NotesAppAndroid"]
 	path = NotesAppAndroid
 	url = git@github.com:matey97/NotesAppAndroid.git
+[submodule "NotesAppNativeScript"]
+	path = NotesAppNativeScript
+	url = git@github.com:matey97/NotesAppNativeScript.git
