@@ -118,7 +118,7 @@ La siguiente tabla contiene un listado con los ejemplos implementados y las tecn
 |-------------|----------|--------------------|---------|
 | [NotesAppAndroid](https://github.com/matey97/NotesAppAndroid) | Móvil (Android) | Kotlin + Jetpack Compose | JUnit + Mockito |
 | [NotesAppNativeScript](https://github.com/matey97/NotesAppNativeScript) | Móvil (Android/iOS) | NativeScript + TypeScript | Karma + Jasmine |
-| TODO | TODO | TODO | TODO |
+| [NotesAppAngular](https://github.com/matey97/NotesAppAngular) | Web | Angular + TypeScript | Karma + Jasmine |
 
 Para más información, consultar el README de cada repositorio.
 
