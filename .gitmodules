@@ -4,3 +4,6 @@
 [submodule "NotesAppNativeScript"]
 	path = NotesAppNativeScript
 	url = git@github.com:matey97/NotesAppNativeScript.git
+[submodule "NotesAppAngular"]
+	path = NotesAppAngular
+	url = git@github.com:matey97/NotesAppAngular.git
