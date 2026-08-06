@@ -2,7 +2,7 @@
 
 Este repositorio contiene varios ejemplos con una pequeña aplicación de notas, cuyo objetivo es mostrar la implementación de historias de usuario, pruebas de aceptación y pruebas de integración.
 
-Este es un proyecto de ejemplo para las asignaturas Diseño de Software (EI1039) y Paradigmas de Software (EI1048) del Grado en Ingeniería Informática de la Universitat Jaume I de Castellón,España.
+Este es un proyecto de ejemplo para las asignaturas Diseño de Software (EI1039) y Paradigmas de Software (EI1048) del Grado en Ingeniería Informática de la Universitat Jaume I de Castellón, España.
 
 ## Descripción de aplicación
 
@@ -17,6 +17,7 @@ La aplicación implementada en los diversos submódulos es una aplicación simpl
 
 ### Escenarios y pruebas de aceptación
 
+> [!NOTE] 
 > **Regla de negocio**: una nota debe tener título, pero puede no tener descripción.
 
 #### HU01
@@ -31,14 +32,14 @@ La aplicación implementada en los diversos submódulos es una aplicación simpl
 ##### E01
 
 - **Given**: no hay ninguna nota almacenada.
-- **When**: se intenta crear una nota con el título "Test title 1" y la descripción "Test description 1".
-- **Then**: se almacena la nota {"title": "Test title 1", "description": "Test description 1", ...}.
+- **When**: se intenta crear una nota con el título `"Test title 1"` y la descripción `"Test description 1"`.
+- **Then**: se almacena la nota `{"title": "Test title 1", "description": "Test description 1", ...}`.
 
 ##### E03
 
 - **Given**: no hay ninguna nota almacenada.
-- **When**: se intenta crear una nota con el título "" y la descripción "Test description 1".
-- **Then**: se lanza la excepción EmptyTitleException.
+- **When**: se intenta crear una nota con el título `""` y la descripción `"Test description 1"`.
+- **Then**: se lanza la excepción `EmptyTitleException`.
 
 #### HU02
 
@@ -56,9 +57,9 @@ La aplicación implementada en los diversos submódulos es una aplicación simpl
 
 ##### E02
 
-- **Given**: hay dos notas almacenadas: [{"title": "Test title 1", "description": "Test description 1"...}, {"title": "Test title 2", "description": "Test description 2"...}].
+- **Given**: hay dos notas almacenadas: `[{"title": "Test title 1", "description": "Test description 1"...}, {"title": "Test title 2", "description": "Test description 2"...}]`.
 - **When**: se intenta acceder al listado de notas.
-- **Then**: se obtiene un listado con las notas almacenadas: [{"title": "Test title 1", "description": "Test description 1"...}, {"title": "Test title 2", "description": "Test description 2"...}].
+- **Then**: se obtiene un listado con las notas almacenadas: `[{"title": "Test title 1", "description": "Test description 1"...}, {"title": "Test title 2", "description": "Test description 2"...}]`.
 
 
 #### HU03
@@ -72,21 +73,21 @@ La aplicación implementada en los diversos submódulos es una aplicación simpl
 
 ##### E01
 
-- **Given**: hay dos notas almacenadas: [{"title": "Test title 1", "description": "Test description 1", "id": "1", ...}, {"title": "Test title 2", "description": "Test description 2", "id": "2", ...}].
-- **When**: se intenta modificar el título de la nota con "id" == "2" a "New note title".
-- **Then**: se actualiza el título de la nota con "id" == "2". Notas almacenadas: [{"title": "Test title 1", "description": "Test description 1", "id": "1", ...}, {"title": "New note title", "description": "Test description 2", "id": "2", ...}]
+- **Given**: hay dos notas almacenadas: `[{"title": "Test title 1", "description": "Test description 1", "id": "1", ...}, {"title": "Test title 2", "description": "Test description 2", "id": "2", ...}]`.
+- **When**: se intenta modificar el título de la nota con `id == "2"` a `"New note title"`.
+- **Then**: se actualiza el título de la nota con `id == "2"`. Notas almacenadas: `[{"title": "Test title 1", "description": "Test description 1", "id": "1", ...}, {"title": "New note title", "description": "Test description 2", "id": "2", ...}]`
 
 ##### E02
 
-- **Given**: hay dos notas almacenadas: [{"title": "Test title 1", "description": "Test description 1", "id": "1", ...}, {"title": "Test title 2", "description": "Test description 2", "id": "2", ...}].
-- **When**: se intenta modificar el título de la nota con "id" == "2" a "".
-- **Then**: se lanza la excepción EmptyTitleException.
+- **Given**: hay dos notas almacenadas: `[{"title": "Test title 1", "description": "Test description 1", "id": "1", ...}, {"title": "Test title 2", "description": "Test description 2", "id": "2", ...}]`.
+- **When**: se intenta modificar el título de la nota con `id == "2"` a `""`.
+- **Then**: se lanza la excepción `EmptyTitleException`.
 
 ##### E03
 
-- **Given**: hay dos notas almacenadas: [{"title": "Test title 1", "description": "Test description 1", "id": "1", ...}, {"title": "Test title 2", "description": "Test description 2", "id": "2", ...}].
-- **When**: se intenta modificar el título de la nota con "id" == "" a "Other title".
-- **Then**: se lanza la excepción NoteNotFoundException.
+- **Given**: hay dos notas almacenadas: `[{"title": "Test title 1", "description": "Test description 1", "id": "1", ...}, {"title": "Test title 2", "description": "Test description 2", "id": "2", ...}]`.
+- **When**: se intenta modificar el título de la nota con `id == ""` a `"Other title"`.
+- **Then**: se lanza la excepción `NoteNotFoundException`.
 
 
 #### HU04
@@ -99,15 +100,15 @@ La aplicación implementada en los diversos submódulos es una aplicación simpl
 
 ##### E01
 
-- **Given**: hay dos notas almacenadas: [{"title": "Test title 1", "description": "Test description 1", "id": "1", ...}, {"title": "Test title 2", "description": "Test description 2", "id": "2", ...}].
-- **When**: se intenta eliminar la nota con "id" == "1".
-- **Then**: se elimina la nota con "id" == "1". Notas almacenadas: [ {"title": "Test title 2", "description": "Test description 2", "id": "2", ...}]
+- **Given**: hay dos notas almacenadas: `[{"title": "Test title 1", "description": "Test description 1", "id": "1", ...}, {"title": "Test title 2", "description": "Test description 2", "id": "2", ...}]`.
+- **When**: se intenta eliminar la nota con `id == "1"`.
+- **Then**: se elimina la nota con `id == "1"`. Notas almacenadas: `[{"title": "Test title 2", "description": "Test description 2", "id": "2", ...}]`
 
 ##### E02
 
-- **Given**: hay dos notas almacenadas: [{"title": "Test title 1", "description": "Test description 1", "id": "1", ...}, {"title": "Test title 2", "description": "Test description 2", "id": "2", ...}].
-- **When**: se intenta eliminar la nota con "id" == "".
-- **Then**: se lanza la excepción NoteNotFoundException.
+- **Given**: hay dos notas almacenadas: `[{"title": "Test title 1", "description": "Test description 1", "id": "1", ...}, {"title": "Test title 2", "description": "Test description 2", "id": "2", ...}]`.
+- **When**: se intenta eliminar la nota con `id == ""`.
+- **Then**: se lanza la excepción `NoteNotFoundException`.
 
 
 ## Ejemplos implementados
